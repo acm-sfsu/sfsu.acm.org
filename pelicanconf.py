@@ -54,3 +54,11 @@ PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 # foobar will not be used, because it's not in caps. All configuration keys
 # have to be in caps
 foobar = "barbaz"
+
+# https://gist.github.com/josefjezek/6053301
+THEME = 'themes/bootstrap2'
+OUTPUT_PATH = 'output'
+PATH = 'content'
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
