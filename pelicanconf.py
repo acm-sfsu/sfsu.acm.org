@@ -60,5 +60,6 @@ THEME = 'themes/bootstrap2'
 OUTPUT_PATH = 'output'
 PATH = 'content'
 
+# http://docs.getpelican.com/en/latest/settings.html#url-settings
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
