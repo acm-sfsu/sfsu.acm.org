@@ -1,0 +1,3 @@
+[submodule "themes/pelican-cait"]
+	path = themes/pelican-cait
+	url = https://github.com/hdra/pelican-cait.git
