@@ -50,22 +50,18 @@ start working right away.
 | Download Processing:
 | http://processing.org/download/
 
-| Processing uses Quicktime for Java for video. This should work easily
-on the Mac.
+| Processing uses Quicktime for Java for video. This should work easily on the Mac.
 | Windows users should read the following:
-| `http://wiki.processing.org/w/Video\_Issues
-`_
-| Note: That whole video thing is kinda a turn off, I know \ |:)| I’ll
-be in the lab starting at 2 at the latest, so if you don’t want to fuss
-with this stuff come in and we’ll do it together.
+| `http://wiki.processing.org/w/Video\_Issues`
+
+| Note: That whole video thing is kinda a turn off, I know :) I’ll be in the lab starting at 2 at the latest, so if you don’t want to fuss with this stuff come in and we’ll do it together.
 
 | Download OSC for Processing:
-| `http://www.sojamo.de/libraries/oscP5/
-`_
+| `http://www.sojamo.de/libraries/oscP5/`
+
 
 | Download Daniel Shiffman’s openkinect for Processing library:
-| `http://www.shiffman.net/p5/kinect/
-`_
+| `http://www.shiffman.net/p5/kinect/`
 
 Also remember to bring a device to test on (perhaps a tablet or smart
 phone), and a laptop.
@@ -74,18 +70,15 @@ phone), and a laptop.
 
 **Windows users:** In order to get video capture to work in Processing,
 it is likely you will need to install WinVDIG. You can find
-WinVDIG \ `here`_. It seems that many people are recommending 1.01,
+WinVDIG \ `here`. It seems that many people are recommending 1.01,
 personally though, only 1.05 is working for me. My setup is Quicktime 7
 and 1.05.
 
- 
+`: http://wiki.processing.org/w/Video_Issues`
 
-.. _`http://wiki.processing.org/w/Video\_Issues
-`: http://wiki.processing.org/w/Video_Issues
-.. _`http://www.sojamo.de/libraries/oscP5/
-`: http://www.sojamo.de/libraries/oscP5/
-.. _`http://www.shiffman.net/p5/kinect/
-`: http://www.shiffman.net/p5/kinect/
+`: http://www.sojamo.de/libraries/oscP5/`
+
+`: http://www.shiffman.net/p5/kinect/`
 .. _here: http://www.shiffman.net/vdig/
 
 .. |:)| image:: http://sfsu.acm.org/wp-includes/images/smilies/icon_smile.gif

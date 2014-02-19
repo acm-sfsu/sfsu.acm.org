@@ -27,15 +27,14 @@ event including time and place:
 
 http://www.microsoft.com/student/en-us/wowzapp/eventpage.aspx?drop=63
 
-| Email me if you plan on attending to either my personal email or the
-acm email address:
+| Email me if you plan on attending to either my personal email or the acm email address:
 |  jhlie@mail.sfsu.edu
-|  acm.sfsu@gmail.com
+|  acm.sfsu@gmail.com 
 
 Hope to see some of you there!
 
 | Jonathan Lei
-|  ACM President
+|  ACM President 
 
 PS - *Again, please note that this event is being hosted on a school
 day, so if you plan skipping class this is a decision on your own

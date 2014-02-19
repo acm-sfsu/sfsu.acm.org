@@ -14,9 +14,7 @@ http://developer.android.com/sdk/index.html
 
 Professor Puder's Android tutorial: `pear.sfsu.edu/csc780/tutorial/`_
 
-| Refreshments (i.e pizza, snacks) to be provided by representatives
-from AfterCollege.com.
-|  AfterCollege is a service started in '99 to help college students
-discover relevant jobs and internships.
+| Refreshments (i.e pizza, snacks) to be provided by representatives from AfterCollege.com.
+|  AfterCollege is a service started in '99 to help college students discover relevant jobs and internships.
 
 .. _pear.sfsu.edu/csc780/tutorial/: http://pear.sfsu.edu/csc780/tutorial/
