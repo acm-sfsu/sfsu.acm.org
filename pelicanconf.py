@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = u'Tom Spalding'
 SITENAME = u'ACM at SFSU'
 SITEURL = ''
+GITHUB = 'https://github.com/acm-sfsu'
+GITHUB_SITE = 'https://github.com/acm-sfsu/acm-sfsu.github.io'
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -21,9 +23,9 @@ LINKS =  (('ACM-SFSU Github', 'https://github.com/acm-sfsu'),
           ('Computer Science Department', 'http://cs.sfsu.edu'),)
 
 # Social widget
-SOCIAL = (('Github', 'https://github.com/acm-sfsu'),
+SOCIAL = (('github', 'https://github.com/acm-sfsu'),
           ('IRC','http://webchat.freenode.net/?channels=acm-sfsu'),
-          ('Twitter', 'http://twitter.com/acmsfsu'),)
+          ('twitter', 'http://twitter.com/acmsfsu'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -31,5 +33,4 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 PATH = 'content'
-OUTPUT_PATH = 'output'
 THEME = "themes/pelican-cait"
