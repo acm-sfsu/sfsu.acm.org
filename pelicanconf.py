@@ -7,6 +7,7 @@ SITENAME = u'ACM at SFSU'
 SITEURL = 'http://acm-sfsu.github.io'
 GITHUB = 'https://github.com/acm-sfsu'
 GITHUB_SITE = 'https://github.com/acm-sfsu/acm-sfsu.github.io'
+CONTACT_EMAIL = 'acm.sfsu@gmail.com'
 
 TIMEZONE = 'America/Los_Angeles'
 
