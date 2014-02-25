@@ -34,3 +34,6 @@ RELATIVE_URLS = True
 
 PATH = 'content'
 THEME = "themes/pelican-cait"
+
+# static paths will be copied under the same name
+STATIC_PATHS = ["images", ]
