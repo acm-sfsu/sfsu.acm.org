@@ -8,6 +8,7 @@ SITEURL = 'http://acm-sfsu.github.io'
 GITHUB = 'https://github.com/acm-sfsu'
 GITHUB_SITE = 'https://github.com/acm-sfsu/acm-sfsu.github.io'
 CONTACT_EMAIL = 'acm.sfsu@gmail.com'
+AUTHOR_EMAIL = CONTACT_EMAIL # default gravatar email
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -43,3 +44,6 @@ STATIC_PATHS = [IMG_PATH, ]
 
 # to disable, comment out
 FAVICON = IMG_PATH+'/icons/favicon.ico'
+
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['gravatar']
