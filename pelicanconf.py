@@ -36,4 +36,8 @@ PATH = 'content'
 THEME = "themes/pelican-cait"
 
 # static paths will be copied under the same name
-STATIC_PATHS = ["images", ]
+IMG_PATH = 'images'
+STATIC_PATHS = [IMG_PATH, ]
+
+# to disable, comment out
+FAVICON = IMG_PATH+'/icons/favicon.ico'
