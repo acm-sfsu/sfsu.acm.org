@@ -46,4 +46,4 @@ STATIC_PATHS = [IMG_PATH, ]
 FAVICON = IMG_PATH+'/icons/favicon.ico'
 
 PLUGIN_PATH = 'plugins'
-PLUGINS = ['gravatar']
+PLUGINS = ['gravatar', 'gallery']
