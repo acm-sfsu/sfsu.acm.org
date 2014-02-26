@@ -13,7 +13,7 @@ AUTHOR_EMAIL = CONTACT_EMAIL # default gravatar email
 
 # Github Activity Plugin
 GITHUB_ACTIVITY_FEED = 'https://github.com/'+GITHUB_USERNAME+'.atom'
-#GITHUB_ACTIVITY_MAX_ENTRIES = 10
+GITHUB_ACTIVITY_MAX_ENTRIES = 10
 
 TIMEZONE = 'America/Los_Angeles'
 
