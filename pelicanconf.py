@@ -5,10 +5,15 @@ from __future__ import unicode_literals
 AUTHOR = u'Tom Spalding'
 SITENAME = u'ACM at SFSU'
 SITEURL = 'http://acm-sfsu.github.io'
-GITHUB = 'https://github.com/acm-sfsu'
-GITHUB_SITE = 'https://github.com/acm-sfsu/acm-sfsu.github.io'
+GITHUB_USERNAME = 'acm-sfsu'
+GITHUB = 'https://github.com/'+GITHUB_USERNAME
+GITHUB_SITE = 'https://github.com/'+GITHUB_USERNAME+'/'+GITHUB_USERNAME+'.github.io'
 CONTACT_EMAIL = 'acm.sfsu@gmail.com'
 AUTHOR_EMAIL = CONTACT_EMAIL # default gravatar email
+
+# Github Activity Plugin
+GITHUB_ACTIVITY_FEED = 'https://github.com/'+GITHUB_USERNAME+'.atom'
+#GITHUB_ACTIVITY_MAX_ENTRIES = 10
 
 TIMEZONE = 'America/Los_Angeles'
 
