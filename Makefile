@@ -8,6 +8,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+TOPIC ?= awesome title
+POSTFILE = $(shell date "+$(INPUTDIR)/%Y-%m-%d-$(TOPIC).md" | sed -e y/\ /-/)
+PAGEFILE = "$(INPUTDIR)/pages/$(TOPIC).md" | sed -e y/\ /-/
+
 FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
@@ -48,6 +52,8 @@ help:
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
 	@echo '   make github                      upload the web site via gh-pages   '
+	@echo '   make post                        begin a new post in INPUTDIR       '
+	@echo '   make page                        create a new page in INPUTDIR/pages'
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -105,4 +111,28 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+post: 
+	echo "Title: $(TOPIC)" >> $(POSTFILE)
+	echo "Date: $(DATE)" >> $(POSTFILE)
+	echo "Modified:" >> $(POSTFILE)
+	echo "Category:" >> $(POSTFILE)
+	echo "Tags:" >> $(POSTFILE)
+	echo "Slug: $(TOPIC)" >> $(POSTFILE)
+	echo "Authors: SFSU-ACM" >> $(POSTFILE)
+	echo "Authors_Sites: https://github.com/acm-sfsu" >> $(POSTFILE)
+	echo "Summary:" >> $(POSTFILE)
+	xdg-open $(POSTFILE)
+	@echo 'post successfully made at $(POSTFILE)'
+
+page: 
+	echo "Title: $(TOPIC)" >> $(PAGEFILE)
+	echo "Date: $(DATE)" >> $(PAGEFILE)
+	echo "Modified:" >> $(PAGEFILE)
+	echo "Slug: $(TOPIC)" >> $(PAGEFILE)
+	echo "Authors: SFSU-ACM" >> $(PAGEFILE)
+	echo "Authors_Sites: https://github.com/acm-sfsu" >> $(PAGEFILE)
+	echo "Summary:" >> $(PAGEFILE)
+	xdg-open $(PAGEFILE)
+	@echo 'page successfully made at $(PAGEFILE)'
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page
