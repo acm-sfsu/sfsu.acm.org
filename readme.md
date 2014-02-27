@@ -36,5 +36,7 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 
 `Authors:` - see [issue #3](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/3).
 
+`Status:` - `hidden` for pages, `draft` for articles.
+
 ##Dependencies
 If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](). `pip install feedparser`
