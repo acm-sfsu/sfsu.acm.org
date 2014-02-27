@@ -3,6 +3,9 @@ output
 pelicanconf_local.py
 themes
 
+#Sass
+.sass-cache
+
 #Python
 *.py[cod]
 

@@ -8,6 +8,12 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+# for Sass
+THEME_NAME=pelican-cait
+SASS_IN=$(BASEDIR)/themes/$(THEME_NAME)/static/css/sass/*
+SASS_OUT=$(BASEDIR)/themes/$(THEME_NAME)/static/css/
+
+# for Post and Page
 TOPIC ?= awesome title
 POSTFILE = $(shell date "+$(INPUTDIR)/%Y-%m-%d-$(TOPIC).md" | sed -e y/\ /-/)
 PAGEFILE = "$(INPUTDIR)/pages/$(TOPIC).md" | sed -e y/\ /-/
@@ -54,6 +60,7 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '   make post                        begin a new post in INPUTDIR       '
 	@echo '   make page                        create a new page in INPUTDIR/pages'
+	@echo '   make sass                        regenerates css from sass dir      '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -135,4 +142,7 @@ page:
 	xdg-open $(PAGEFILE)
 	@echo 'page successfully made at $(PAGEFILE)'
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page
+sass:
+	sass $(SASS_IN) $(SASS_OUT)
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page sass

@@ -13,6 +13,13 @@ If you need ideas on where to contribute, check out the [issue list](https://git
 
 If you have any questions, please drop by [#acm-sfsu](http://webchat.freenode.net/?channels=acm-sfsu).
 
+##Make
+* `make help` - help
+
+added commands
+* `make post` and `make page` - see [issue #4](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/4)
+* `make sass` - generates `.css` from `.scss`. Set `THEME_NAME` in `Makefile`. See [Sass](https://github.com/nex3/sass).
+
 ##Plugins
 Plugins can be added in the `pelicanconf.py` file's `PLUGINS` line.
 
@@ -44,3 +51,5 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](). Get with `pip install feedparser`.
 
 If using [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post) need `beautifulsoup4`. Get with `pip install beautifulsoup4`.
+
+If working on theme's CSS, will need [Sass](https://github.com/nex3/sass). Get with `gem install sass`.
