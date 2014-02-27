@@ -32,7 +32,7 @@ LINKS =  (('ACM-SFSU Github', 'https://github.com/acm-sfsu'),
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/acm-sfsu'),
-          ('IRC','http://webchat.freenode.net/?channels=acm-sfsu'),
+          ('comment','http://webchat.freenode.net/?channels=acm-sfsu'),
           ('twitter', 'http://twitter.com/acmsfsu'),)
 
 DEFAULT_PAGINATION = 10
