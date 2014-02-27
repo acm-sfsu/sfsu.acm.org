@@ -26,11 +26,13 @@ See [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plug
 See [pelican-plugins/gravatar](https://github.com/getpelican/pelican-plugins/tree/master/gravatar).
 
 ###Share Post
+> `share_post` creates old school URLs for some popular sites [...] these links do not have the ability to track the users.
+
 See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post).
 
 ##Metadata
 
-`Template:` (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery`.
+`Template:` - (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery`.
 
 `Modified:` - see [issue #2](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/2).
 
@@ -39,4 +41,6 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 `Status:` - `hidden` for pages, `draft` for articles.
 
 ##Dependencies
-If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](). `pip install feedparser`
+If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](). Get with `pip install feedparser`.
+
+If using [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post) need `beautifulsoup4`. Get with `pip install beautifulsoup4`.
