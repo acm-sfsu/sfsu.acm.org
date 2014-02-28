@@ -10,6 +10,7 @@ GITHUB = 'https://github.com/'+GITHUB_USERNAME
 GITHUB_SITE = 'https://github.com/'+GITHUB_USERNAME+'/'+GITHUB_USERNAME+'.github.io'
 CONTACT_EMAIL = 'acm.sfsu@gmail.com'
 AUTHOR_EMAIL = CONTACT_EMAIL # default gravatar email
+DISQUS_SITENAME = 'acm-sfsu'
 
 # Github Activity Plugin
 GITHUB_ACTIVITY_FEED = 'https://github.com/'+GITHUB_USERNAME+'.atom'
