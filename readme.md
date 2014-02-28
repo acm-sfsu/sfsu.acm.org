@@ -2,10 +2,14 @@
 
 Feel free to contribute!
 
-* fork the repo
+* fork [the repo](https://github.com/acm-sfsu/acm-sfsu.github.io)
 * `git clone --recursive https://github.com/<username>/acm-sfsu.github.io.git`
+  * `cd acm-sfsu.github.io`
+  * fork the [acm-sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) theme.
+  * `git clone https://github.com/<username>/pelican-cait.git themes/pelican-cait/`
 * improve stuff, or write a post/article
   * `make post` or `make page`
+  * teset locally with `pelican` or `make html`
   * `git commit -am 'brief but informative message'`
 * make a [pull request](https://github.com/acm-sfsu/acm-sfsu.github.io/pulls)!
 
