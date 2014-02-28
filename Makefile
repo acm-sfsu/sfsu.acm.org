@@ -10,8 +10,8 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 # for Sass
 THEME_NAME=pelican-cait
-SASS_IN=$(BASEDIR)/themes/$(THEME_NAME)/static/css/sass/*
-SASS_OUT=$(BASEDIR)/themes/$(THEME_NAME)/static/css/
+SASS_IN=$(BASEDIR)/themes/$(THEME_NAME)/static/css/sass
+SASS_OUT=$(BASEDIR)/themes/$(THEME_NAME)/static/css
 
 # for Post and Page
 TOPIC ?= awesome title
@@ -143,6 +143,6 @@ page:
 	@echo 'page successfully made at $(PAGEFILE)'
 
 sass:
-	sass $(SASS_IN) $(SASS_OUT)
+	sass --watch $(SASS_IN):$(SASS_OUT)
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page sass
