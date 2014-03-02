@@ -31,6 +31,8 @@ Plugins can be added in the `pelicanconf.py` file's `PLUGINS` line.
 See [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery).
 
 ###Github Activity
+* [gha.html](https://github.com/acm-sfsu/pelican-cait/blob/master/templates/gha.html)
+
 See [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity).
 
 ###Gravatar
