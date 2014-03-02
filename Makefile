@@ -7,6 +7,8 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+OUTPUT_BRANCH=master
+SOURCE_BRANCH=source
 
 # for Sass
 THEME_NAME=pelican-cait
@@ -116,7 +118,7 @@ cf_upload: publish
 
 github: publish
 	ghp-import $(OUTPUTDIR)
-	git push origin gh-pages
+	git push origin $(OUTPUT_BRANCH)
 
 post: 
 	echo "Title: $(TOPIC)" >> $(POSTFILE)
