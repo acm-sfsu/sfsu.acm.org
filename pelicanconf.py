@@ -46,6 +46,7 @@ THEME = "themes/pelican-cait"
 
 # static paths will be copied under the same name
 IMG_PATH = 'images'
+#GALLERY_PATH = IMG_PATH+'/gallery'
 STATIC_PATHS = [IMG_PATH, ]
 
 # to disable, comment out

@@ -45,7 +45,9 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 
 ##Metadata
 
-`Template:` - (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery`.
+`Template:` - (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery` for [pages](https://github.com/getpelican/pelican-plugins/tree/master/gallery#gallery-page).
+
+`Gallery:` - [album_name](https://github.com/getpelican/pelican-plugins/tree/master/gallery#articles)
 
 `Modified:` - see [issue #2](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/2).
 
