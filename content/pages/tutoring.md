@@ -1,7 +1,7 @@
 Title: Tutoring
 Date: 2014-02-24
 Modified: 2014-03-01
-Slug: Tutoring
+Slug: tutoring
 
 The ACM is offering open tutoring for Computer Science courses taken at SFSU.
 
