@@ -33,9 +33,15 @@ LINKS =  (('ACM-SFSU Github', 'https://github.com/acm-sfsu'),
           ('Computer Science Department', 'http://cs.sfsu.edu'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/acm-sfsu'),
+SOCIAL = (('envelope-alt','mailto:'+CONTACT_EMAIL),
+          ('github', 'https://github.com/acm-sfsu'),
           ('comment','http://webchat.freenode.net/?channels=acm-sfsu'),
           ('twitter', 'http://twitter.com/acmsfsu'),)
+
+# Social
+#CONTACTS = ((,),)
+
+#CUSTOM_MENUITEMS = ((,),)
 
 DEFAULT_PAGINATION = 10
 
