@@ -53,7 +53,7 @@ THEME = "themes/pelican-cait"
 
 # static paths will be copied under the same name
 IMG_PATH = 'images'
-#GALLERY_PATH = IMG_PATH+'/gallery'
+GALLERY_PATH = IMG_PATH+'/gallery'
 STATIC_PATHS = [IMG_PATH, ]
 
 # to disable, comment out
@@ -61,3 +61,12 @@ FAVICON = IMG_PATH+'/icons/favicon.ico'
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer']
+
+# RESIZE = [
+#             ('gallery', False, 200,200),
+#           ]
+
+# THUMBNAIL_DIR is the path to the output sub directory where the thumbnails are generated
+# THUMBNAIL_SIZES is a dictionary mapping name of size to size specifications.
+# The generated filename will be originalname_thumbnailname.ext unless THUMBNAIL_KEEP_NAME is set.
+# THUMBNAIL_KEEP_NAME is a boolean which if set puts the file with the original name in a thumbnailname folder.

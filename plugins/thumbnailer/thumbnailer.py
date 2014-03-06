@@ -142,11 +142,11 @@ def resize_thumbnails(pelican):
 
 def _image_path(pelican):
     return path.join(pelican.settings['PATH'],
-                        pelican.settings.get("IMAGE_PATH", DEFAULT_IMAGE_DIR))
+                        pelican.settings.get("IMG_PATH", DEFAULT_IMAGE_DIR))
 
 
 def expand_gallery(generator, metadata):
-    """ Expand a gallery tag to include all of the files in a specific directory under IMAGE_PATH
+    """ Expand a gallery tag to include all of the files in a specific directory under IMG_PATH
 
     :param pelican: The pelican instance
     :return: None
@@ -164,7 +164,7 @@ def expand_gallery(generator, metadata):
     for dirpath, _, filenames in os.walk(in_path):
         for filename in filenames:
             url = path.join(dirpath, filename).replace(base_path, "")[1:]
-            url = path.join('/static', generator.settings.get('IMAGE_PATH', DEFAULT_IMAGE_DIR), url).replace('\\', '/')
+            url = path.join('/static', generator.settings.get('IMG_PATH', DEFAULT_IMAGE_DIR), url).replace('\\', '/')
             logger.debug("GALLERY: {0}".format(url))
             thumbnail = resizer.get_thumbnail_name(filename)
             thumbnail = path.join('/', generator.settings.get('THUMBNAIL_DIR', DEFAULT_THUMBNAIL_DIR), thumbnail).replace('\\', '/')
