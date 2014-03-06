@@ -5,7 +5,8 @@ from pelican import signals
 def add_gallery_post(generator):
 
     contentpath = generator.settings.get('PATH')
-    gallerycontentpath = os.path.join(contentpath,'images/gallery')
+    gallerypath = generator.settings.get('GALLERY_PATH')
+    gallerycontentpath = os.path.join(contentpath,gallerypath)
 
     for article in generator.articles:
         if 'gallery' in article.metadata.keys():
@@ -26,7 +27,8 @@ def add_gallery_post(generator):
 def generate_gallery_page(generator):
 
     contentpath = generator.settings.get('PATH')
-    gallerycontentpath = os.path.join(contentpath,'images/gallery')
+    gallerypath = generator.settings.get('GALLERY_PATH')
+    gallerycontentpath = os.path.join(contentpath,gallerypath)
 
     for page in generator.pages:
         if page.metadata.get('template') == 'gallery':

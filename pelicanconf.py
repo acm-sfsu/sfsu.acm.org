@@ -60,4 +60,4 @@ STATIC_PATHS = [IMG_PATH, ]
 FAVICON = IMG_PATH+'/icons/favicon.ico'
 
 PLUGIN_PATH = 'plugins'
-PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post']
+PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer']
