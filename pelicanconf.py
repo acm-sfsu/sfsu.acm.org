@@ -49,6 +49,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 PATH = 'content'
+OUTPUT_PATH = 'output'
 THEME = "themes/pelican-cait"
 
 # static paths will be copied under the same name
@@ -57,16 +58,22 @@ GALLERY_PATH = IMG_PATH+'/gallery'
 STATIC_PATHS = [IMG_PATH, ]
 
 # to disable, comment out
-FAVICON = IMG_PATH+'/icons/favicon.ico'
+FAVICON = IMG_PATH+'/icons/favicon.ico' 
+#moved icon to main path until solve thumbnailer icon exception
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer']
 
-# RESIZE = [
-#             ('gallery', False, 200,200),
-#           ]
-
 # THUMBNAIL_DIR is the path to the output sub directory where the thumbnails are generated
+THUMBNAIL_DIR = GALLERY_PATH+'/thumbnails'
 # THUMBNAIL_SIZES is a dictionary mapping name of size to size specifications.
 # The generated filename will be originalname_thumbnailname.ext unless THUMBNAIL_KEEP_NAME is set.
+THUMBNAIL_SIZES = {
+#    'thumbnail_square': '200',
+    'thumbnail_wide': '200x?',
+#    'thumbnail_tall': '?x200',
+}
 # THUMBNAIL_KEEP_NAME is a boolean which if set puts the file with the original name in a thumbnailname folder.
+THUMBNAIL_KEEP_NAME = True
+# Assuming THUMBNAIL_KEEP_NAME is true, then set def thumb sizefolder. This is a path that has same name as in the thumbnail size dictionary..
+DEF_THUMB_SIZE_PATH = 'thumbnail_wide'
