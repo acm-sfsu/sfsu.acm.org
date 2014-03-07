@@ -9,7 +9,7 @@ Feel free to contribute!
   * `git clone https://github.com/<username>/pelican-cait.git themes/pelican-cait/`
 * improve stuff, or write a post/article
   * `make post` or `make page`
-  * teset locally with `pelican` or `make html`
+  * test locally with `pelican` or `make html`
   * `git commit -am 'brief but informative message'`
 * make a [pull request](https://github.com/acm-sfsu/acm-sfsu.github.io/pulls)!
 
@@ -28,6 +28,8 @@ added commands
 Plugins can be added in the `pelicanconf.py` file's `PLUGINS` line.
 
 ###Gallery
+* [Issue #8](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/8).
+
 See [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery).
 
 ###Github Activity
@@ -47,7 +49,7 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 
 `Template:` - (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery` for [pages](https://github.com/getpelican/pelican-plugins/tree/master/gallery#gallery-page).
 
-`Gallery:` - [album_name](https://github.com/getpelican/pelican-plugins/tree/master/gallery#articles)
+`Gallery:` - [album_name](https://github.com/getpelican/pelican-plugins/tree/master/gallery#articles), example: `Gallery: 2014/02/21`. At the moment this must be paired with `Template: album`, see [issue #8](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/8).
 
 `Modified:` - see [issue #2](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/2).
 
@@ -56,8 +58,20 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 `Status:` - `hidden` for pages, `draft` for articles.
 
 ##Dependencies
-If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](). Get with `pip install feedparser`.
+If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity) will need [feedparser](https://pypi.python.org/pypi/feedparser). Get with `pip install feedparser`.
 
 If using [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post) need `beautifulsoup4`. Get with `pip install beautifulsoup4`.
 
 If working on theme's CSS, will need [Sass](https://github.com/nex3/sass). Get with `gem install sass`.
+
+##A couple extra dev notes
+**Output:**
+* `git checkout source` - ensure on `source` branch
+* `pelican -d` - deletes output dir and regenerates output into default output directory.
+* `git checkout master` - move to master branch. it is your choice whether to persist commits through this master branch or delete it, and make an orphaned branch each time. 
+* `cd output`
+* `rsync -r --del * ../` recursively move the contents of output directory to main directory and delete the original contents.
+* `cd ..`
+* `rm -rf output` - remove the output directory
+* `git add .` - add everything
+* `git commit -m 'generated output'`
