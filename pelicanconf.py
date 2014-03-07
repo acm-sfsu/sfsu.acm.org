@@ -75,5 +75,6 @@ THUMBNAIL_SIZES = {
 }
 # THUMBNAIL_KEEP_NAME is a boolean which if set puts the file with the original name in a thumbnailname folder.
 THUMBNAIL_KEEP_NAME = True
-# Assuming THUMBNAIL_KEEP_NAME is true, then set def thumb sizefolder. This is a path that has same name as in the thumbnail size dictionary..
-DEF_THUMB_SIZE_PATH = 'thumbnail_wide'
+# Set default thumb sizefolder. This is a path that has same name as in the thumbnail size dictionary..
+if(THUMBNAIL_KEEP_NAME):
+	DEF_THUMB_SIZE_PATH = 'thumbnail_wide'+'/'
