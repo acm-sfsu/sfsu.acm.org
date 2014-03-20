@@ -2,6 +2,8 @@
 
 Feel free to contribute!
 
+See Pelican's [Getting Started](http://docs.getpelican.com/en/3.3.0/getting_started.html) page.
+
 * fork [the repo](https://github.com/acm-sfsu/acm-sfsu.github.io)
 * `git clone --recursive https://github.com/<username>/acm-sfsu.github.io.git`
   * `cd acm-sfsu.github.io`
