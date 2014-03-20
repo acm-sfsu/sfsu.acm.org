@@ -73,7 +73,8 @@ If working on theme's CSS, will need [Sass](https://github.com/nex3/sass). Get w
 **Output:**
 * `git checkout source` - ensure on `source` branch
 * `pelican -d` - deletes output dir and regenerates output into default output directory.
-* `git checkout master` - move to master branch. it is your choice whether to persist commits through this master branch or delete it, and make an orphaned branch each time. 
+* `git checkout master` - move to master branch. it is your choice whether to persist commits through this master branch or delete it, and make an orphaned branch each time with `git checkout --orphan master`. 
+* `git rm -rf .` then clear out the remainder excluding the `output` folder.
 * `cd output`
 * `rsync -r --del * ../` recursively move the contents of output directory to main directory and delete the original contents.
 * `cd ..`
