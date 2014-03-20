@@ -29,6 +29,9 @@ added commands
 ##Plugins
 Plugins can be added in the `pelicanconf.py` file's `PLUGINS` line.
 
+###Render Math
+Render any LaTeX and math. See [pelican-plugins/render_math](https://github.com/getpelican/pelican-plugins/tree/master/render_math).
+
 ###Gallery
 * [Issue #8](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/8).
 
