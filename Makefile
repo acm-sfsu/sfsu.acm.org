@@ -47,8 +47,12 @@ help:
 	@echo '                                                                       '
 	@echo 'Usage:                                                                 '
 	@echo '   make html                        (re)generate the web site          '
+	@echo '   make sass                        generates css from sass dir        '
+	@echo '   make all                         generates sass and html            '
+#	@echo '   make regenerate                  regenerate files upon modification '
+	@echo '   make regenerate_html             regenerate html when modified      '
+	@echo '   make regenerate_sass             regenerates css from sass          '
 	@echo '   make clean                       remove the generated files         '
-	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
 	@echo '   make serve [PORT=8000]           serve site at http://localhost:8000'
 	@echo '   make devserver [PORT=8000]       start/restart develop_server.sh    '
@@ -62,7 +66,6 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '   make post                        begin a new post in INPUTDIR       '
 	@echo '   make page                        create a new page in INPUTDIR/pages'
-	@echo '   make sass                        regenerates css from sass dir      '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -70,11 +73,21 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+regenerate_html:
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+sass:
+	sass --update $(SASS_IN):$(SASS_OUT)
+
+regenerate_sass:
+	sass --watch $(SASS_IN):$(SASS_OUT)
+
+all: sass html
+
+regenerate: regenerate_sass regnerate_html
+
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
-
-regenerate:
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
 ifdef PORT
@@ -144,7 +157,4 @@ page:
 	xdg-open $(PAGEFILE)
 	@echo 'page successfully made at $(PAGEFILE)'
 
-sass:
-	sass --watch $(SASS_IN):$(SASS_OUT)
-
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page sass
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github post page sass all regenerate_html regenerate_sass
