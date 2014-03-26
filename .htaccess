@@ -4,6 +4,13 @@ ErrorDocument 403 /pages/403.html
 ErrorDocument 404 /pages/404.html
 ErrorDocument 500 /pages/500.html
 
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
 Redirect /calendar.html /pages/calendar.html
 Redirect /join.html /pages/join.html
 Redirect /officers.html /pages/officers.html
