@@ -1,0 +1,5 @@
+Redirect /calendar.html /pages/calendar.html
+Redirect /join.html /pages/join.html
+Redirect /officers.html /pages/officers.html
+Redirect /tutoring.html /pages/tutoring.html
+Redirect /bookloans.html /pages/book-loans.html
