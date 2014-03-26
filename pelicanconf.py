@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Tom Spalding'
 SITENAME = u'ACM at SFSU'
-SITEURL = 'http://acm-sfsu.github.io'
+SITEURL = 'http://sfsu.acm.org'
+SITEDESC = "Hi, we're the ACM chapter at SFSU. We're students who like computer science."
 GITHUB_USERNAME = 'acm-sfsu'
 GITHUB = 'https://github.com/'+GITHUB_USERNAME
 GITHUB_SITE = 'https://github.com/'+GITHUB_USERNAME+'/'+GITHUB_USERNAME+'.github.io'
