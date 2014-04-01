@@ -21,6 +21,6 @@ The San Francisco State chapter of ACM provides:
 * Extracurricular education
 * Career opportunities
 
-Membership dues are $15 for new members, and $10 for past members.
+Membership dues are &#x24;15 for new members, and &#x24;10 for past members.
 
 * [ACM Officers](officers.html)
