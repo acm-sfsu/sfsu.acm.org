@@ -1,7 +1,8 @@
 Title: Book Loan
 Date: 2014-02-21
-Modified:
+Modified: 2014-04-01
 Slug: book-loans
+Status: hidden
 
 San Francisco State ACM has its own library full of donated books from previous semesters. Need a textbook? We have textbooks for computer science, ath, and physics courses. We let you borrow books for a semester instead of purchasing one at your expense. This FREE service is for members only. 
 
