@@ -63,7 +63,7 @@ FAVICON = IMG_PATH+'/icons/favicon.ico'
 #moved icon to main path until solve thumbnailer icon exception
 
 PLUGIN_PATH = 'plugins'
-PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer','render_math']
+PLUGINS = ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer','render_math', 'neighbors']
 
 # THUMBNAIL_DIR is the path to the output sub directory where the thumbnails are generated
 THUMBNAIL_DIR = GALLERY_PATH+'/thumbnails'

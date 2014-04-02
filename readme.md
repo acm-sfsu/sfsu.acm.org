@@ -2,7 +2,7 @@
 
 Feel free to contribute!
 
-See Pelican's [Getting Started](http://docs.getpelican.com/en/3.3.0/getting_started.html) page.
+See Pelican's [Getting Started](http://docs.getpelican.com/en/latest/getting_started.html) page.
 
 * fork [the repo](https://github.com/acm-sfsu/acm-sfsu.github.io)
 * `git clone --recursive https://github.com/<username>/acm-sfsu.github.io.git`
@@ -41,6 +41,12 @@ See [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree
 * [gha.html](https://github.com/acm-sfsu/pelican-cait/blob/master/templates/gha.html)
 
 See [pelican-plugins/github_activity](https://github.com/getpelican/pelican-plugins/tree/master/github_activity).
+
+###Neighbors
+
+* [Issue #6](https://github.com/acm-sfsu/acm-sfsu.github.io/issues/6)
+
+See [pelican-plugins/neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors).
 
 ###Gravatar
 See [pelican-plugins/gravatar](https://github.com/getpelican/pelican-plugins/tree/master/gravatar).
