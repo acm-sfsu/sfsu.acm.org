@@ -33,6 +33,8 @@ Plugins can be added in the `pelicanconf.py` file's `PLUGINS` line.
 ###Render Math
 Render any LaTeX and math. See [pelican-plugins/render_math](https://github.com/getpelican/pelican-plugins/tree/master/render_math).
 
+* Issue #23
+
 ###Gallery
 * [Issue #8](https://github.com/acm-sfsu/sfsu.acm.org/issues/8).
 
@@ -57,6 +59,13 @@ See [pelican-plugins/gravatar](https://github.com/getpelican/pelican-plugins/tre
 
 See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post).
 
+###Liquid Tags
+
+* Issue #34
+* Issue #35
+
+See [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)]
+
 ##Metadata
 
 `Template:` - (from [acm/sfsu/pelican-cait](https://github.com/acm-sfsu/pelican-cait) takes) `contact`, `landing`, (from [pelican-plugins/gallery](https://github.com/getpelican/pelican-plugins/tree/master/gallery) takes) `gallery` for [pages](https://github.com/getpelican/pelican-plugins/tree/master/gallery#gallery-page).
@@ -75,3 +84,5 @@ If using [pelican-plugins/github_activity](https://github.com/getpelican/pelican
 If using [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/tree/master/share_post) need `beautifulsoup4`. Get with `pip install beautifulsoup4`.
 
 If working on theme's CSS, will need [Sass](https://github.com/nex3/sass). Get with `gem install sass`.
+
+When the [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) plugin is in use, you'll need an [ipython](https://github.com/ipython/ipython) greater than 1.0. Download source, or wheel.
