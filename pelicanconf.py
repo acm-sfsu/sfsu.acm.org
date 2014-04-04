@@ -55,8 +55,13 @@ THEME = "themes/pelican-cait"
 
 # static paths will be copied under the same name
 IMG_PATH = 'images'
+CODE_DIR = 'code' #For liquid_tags.include_code, default is `code` in the content directory.
+NOTEBOOK_DIR = 'notebooks' #For liquid_tags.notebook, default is 'notebooks'
 GALLERY_PATH = IMG_PATH+'/gallery'
-STATIC_PATHS = [IMG_PATH, ]
+STATIC_PATHS = [IMG_PATH, CODE_DIR, NOTEBOOK_DIR]
+
+# For liquid_tags.notebook
+EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 # to disable, comment out
 FAVICON = IMG_PATH+'/icons/favicon.ico' 
@@ -66,6 +71,7 @@ PLUGIN_PATH = 'plugins'
 PLUGINS =  ['gravatar', 'gallery', 'github_activity', 'share_post', 'thumbnailer','render_math',
 			'neighbors', 'liquid_tags.notebook', 'liquid_tags.img', 'liquid_tags.video',
 			'liquid_tags.youtube', 'liquid_tags.vimeo', 'liquid_tags.include_code', 'liquid_tags.notebook'] 
+
 
 # THUMBNAIL_DIR is the path to the output sub directory where the thumbnails are generated
 THUMBNAIL_DIR = GALLERY_PATH+'/thumbnails'

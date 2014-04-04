@@ -61,10 +61,14 @@ See [pelican-plugins/share_post](https://github.com/getpelican/pelican-plugins/t
 
 ###Liquid Tags
 
+See [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)]
+
 * Issue #34
 * Issue #35
 
-See [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags)]
+put code in `content/code/` folder and IPython notebooks in `content/notebooks/`.
+
+We would love to see your science/projects/research, see [ipython.org/notebook.html](http://ipython.org/notebook.html) and [a gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks).
 
 ##Metadata
 
@@ -85,4 +89,4 @@ If using [pelican-plugins/share_post](https://github.com/getpelican/pelican-plug
 
 If working on theme's CSS, will need [Sass](https://github.com/nex3/sass). Get with `gem install sass`.
 
-When the [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) plugin is in use, you'll need an [ipython](https://github.com/ipython/ipython) greater than 1.0. Download source, or wheel.
+When the [pelican-plugins/liquid_tags](https://github.com/getpelican/pelican-plugins/tree/master/liquid_tags) plugin is in use, you'll need an [ipython](https://github.com/ipython/ipython) greater than 1.0. `pip install ipython[all]`
