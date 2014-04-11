@@ -17,8 +17,10 @@ SASS_OUT=$(BASEDIR)/themes/$(THEME_NAME)/static/css
 
 # for Post and Page
 TOPIC ?= awesome title
-POSTFILE = $(shell date "+$(INPUTDIR)/%Y-%m-%d-$(TOPIC).md" | sed -e y/\ /-/)
+title ?= $(TOPIC)
+POSTFILE = $(shell date "+$(INPUTDIR)/%Y-%m-%d-$(title).md" | sed -e y/\ /-/)
 PAGEFILE = "$(INPUTDIR)/pages/$(TOPIC).md" | sed -e y/\ /-/
+DATE = $(shell date +"%Y-%m-%d %R")
 
 FTP_HOST=localhost
 FTP_USER=anonymous
@@ -60,7 +62,7 @@ help:
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
 	@echo '   make github                      upload the web site via gh-pages   '
-	@echo '   make post                        begin a new post in INPUTDIR       '
+	@echo '   make post [title='mytitle']      begin a new post in INPUTDIR       '
 	@echo '   make page                        create a new page in INPUTDIR/pages'
 	@echo '   make sass                        regenerates css from sass dir      '
 	@echo '                                                                       '
@@ -120,18 +122,26 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin $(OUTPUT_BRANCH)
 
-post: 
-	echo "Title: $(TOPIC)" >> $(POSTFILE)
-	echo "Date: $(DATE)" >> $(POSTFILE)
-	echo "Modified:" >> $(POSTFILE)
-	echo "Category:" >> $(POSTFILE)
-	echo "Tags:" >> $(POSTFILE)
-	echo "Slug: $(TOPIC)" >> $(POSTFILE)
-	echo "Authors: SFSU-ACM" >> $(POSTFILE)
-	echo "Authors_Sites: https://github.com/acm-sfsu" >> $(POSTFILE)
-	echo "Summary:" >> $(POSTFILE)
-	xdg-open $(POSTFILE)
-	@echo 'post successfully made at $(POSTFILE)'
+post:
+ifneq ($(wildcard $(POSTFILE)),)
+	@read -r -p "File $(title) already exists! Modify? (y/n):" REPLY; \
+	[ $$REPLY = "y" ] || (echo Nothing done for post.; exit 1;)
+	@sed 's/Modified:.*/Modified: $(DATE)/' $(POSTFILE) > $(POSTFILE).tmp
+	@mv $(POSTFILE).tmp $(POSTFILE)
+	@xdg-open $(POSTFILE) || open $(POSTFILE)
+else 
+	@echo "Title: $(title)" > $(POSTFILE)
+	@echo "Date: $(DATE)" >> $(POSTFILE)
+	@echo "Modified:" >> $(POSTFILE)
+	@echo "Category:" >> $(POSTFILE)
+	@echo "Tags:" >> $(POSTFILE)
+	@echo "Slug: $(title)" >> $(POSTFILE)
+	@echo "Authors: SFSU-ACM" >> $(POSTFILE)
+	@echo "Authors_Sites: https://github.com/acm-sfsu" >> $(POSTFILE)
+	@echo "Summary:" >> $(POSTFILE)
+	@xdg-open $(POSTFILE) || open $(POSTFILE)
+	@echo 'post successfully made at $(POSTFILE).' 
+endif
 
 page: 
 	echo "Title: $(TOPIC)" >> $(PAGEFILE)
