@@ -20,6 +20,8 @@ If you need ideas on where to contribute, check out the [issue list](https://git
 
 If you have any questions, please drop by [#acm-sfsu](http://webchat.freenode.net/?channels=acm-sfsu).
 
+Windows users - see our [Getting Started - Windows](https://github.com/acm-sfsu/sfsu.acm.org/wiki/Getting-Started#windows) wiki page.
+
 ##Make
 * `make help` - help
 
