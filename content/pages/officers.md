@@ -5,15 +5,15 @@ Slug: officers
 
 [acm.sfsu@gmail.com](mailto: acm.sfsu@gmail.com)
 
-**2013-2014**
+**2014-2015**
 
-* Alex Cory 
-* Andrew Wong - **Vice President**
-* Aparna Gopalakrishnan 
-* Bryce Simmer - **President**
+* Omar Sandoval **President**
+* Pavitra Kansara - **Vice President**
+* Martha Feiler - **Secretary**
+* Andy Wong - **Treasurer**
+* James Kao - **Assistant Treasurer**
+* Aayush Bandari
 * Darin Evanow 
-* David Hua - **Secretary**
-* Jonathan Hou Lei - **Treasurer**
-* Omar Sandoval 
-* Pavitra Kansara 
 * Thomas Spalding
+* Aparna Gopalakrishnan 
+
