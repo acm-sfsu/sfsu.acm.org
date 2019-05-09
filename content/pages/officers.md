@@ -5,6 +5,9 @@ Slug: officers
 
 [acm.sfsu@gmail.com](mailto: acm.sfsu@gmail.com)
 
+**2018-2019**
+* Feona Garcia
+
 **2014-2015**
 
 * Omar Sandoval **President**
